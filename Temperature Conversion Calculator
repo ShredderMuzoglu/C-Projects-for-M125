@@ -1,0 +1,30 @@
+/*
+
+   Programmer’s name:   lab1_Shredder.cpp
+
+   Programmer: Shredder Muzoglu
+
+   Date: 1/28/2024
+
+   Version: 1.0
+
+   This program starts with the user inputting a Farenheit volume which
+   is stored in the variable temp_f. The inputted Farenheit volume is then
+   converted to Celsius then printed out.
+
+*/
+
+#include<iostream>
+
+int main()
+{
+double temp_f;
+double temp_c;
+
+cout << "enter farenheit degree" << endl;
+cin >> temp_f;
+
+temp_c = (5.0/9.0)*(temp_f – 32);
+
+cout << "converted celsius value is" << temp_c << endl;
+}
