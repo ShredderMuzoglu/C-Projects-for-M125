@@ -1,0 +1,33 @@
+/*
+
+   Programmer’s name:   Lab1_ShredderM.txt
+
+   Programmer: Shredder Muzoglu
+
+   Date: 1/28/2024
+
+   Version: 1.0
+
+   This program helps the user calculate the total price when buying
+   an object. The user inputs the price and the tax rate in order to
+   calculate the total price of the object they are buying.
+
+*/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+double TaxRate;
+double Price;
+double Tax;
+double totalPrice;
+
+cout << "enter tax rate" << endl;
+cin >> TaxRate
+ 
+Tax = Price * TaxRate;
+totalPrice = Tax + Price
+
+cout << "total pay is" << totalPrice << endl;
+}
