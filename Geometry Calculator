@@ -1,0 +1,57 @@
+/*
+
+   Programmer’s name:   Lab Assignment_4.Shredder.cpp
+
+   Programmer: Shredder Muzoglu
+
+   Date: 2/14/2024
+
+   Version: 1.0
+
+   This program displays 3 options for geometric calculations: calculate area of circle, calculate 
+   area of a rectangle and calculate area of a triangle. With this calculator, simple geometric calculations
+   can be easily calculated for you.
+
+*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+   float radius = 0.0;
+   float len = 0.0;
+   float width = 0.0;
+   float base = 0.0;
+   float height = 0.0;
+   int choice;
+   
+  cout << "1. Calculate the Area of a Circle" << endl;
+  cout << "2. Calculate the Area of a Rectangle" << endl;
+  cout << "3. Calculate the Area of a Triangle" << endl;
+  cout << "4. Quit" << endl;
+  cout << "Enter your choice (1- 4)" << endl;
+  cin >> choice;
+
+switch (choice)
+   {
+    case 1 : cout << "Enter Radius" << endl;
+             cin >> radius;
+             cout << "Area = " << 3.14159 * pow(radius, 2) << endl;
+             break;
+    case 2 : cout << "Enter length and width" << endl;
+            cin >> len >> width;
+            cout << "Area = " << len * width << endl;
+            break;
+    case 3 : cout << "Enter base and height" << endl;
+            cin >> base >> height;
+            cout << "Area = " << base * height * 0.5 << endl;
+            break;
+    case 4 : return 0;
+            break;
+    default : cout << "Wrong number selected" << endl;
+             cout<<"Please enter grade letter again"<<endl;
+            break;
+   }
+return 0;
+}
