@@ -1,0 +1,42 @@
+/*
+
+   Programmer’s name:   Labassignment_4.Shredder.cpp
+
+   Programmer: Shredder Muzoglu
+
+   Date: 2/15/2024
+
+   Version: 1.0
+
+   This program is a simple program that helps an individual calculate their body mass index (BMI).
+   Individuals can input their weight and height to see if they are either at optimal weight, underweight
+   or overweight.
+
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+ int main()
+{
+  float height;
+  float weight;
+  float bmi;
+ cout << "enter height and weight" << endl;
+ cin >> height >> weight;
+
+
+ cout << "height = " << height << " weight = " << weight << endl;
+ 
+ bmi = (weight * 703) / pow(height,2);
+
+
+ if (18.5 <= bmi && bmi <= 25) 
+  cout << "weight is optimal, bmi = " << bmi << endl;
+ if (bmi > 25)
+  cout << "You are overweight, bmi = " << bmi << endl;
+ if (bmi < 18.5)
+  cout << "You are underweight, bmi = " << bmi << endl;
+
+     return 0;
+ }
